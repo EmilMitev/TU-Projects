@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBoxStudenInfo = new System.Windows.Forms.GroupBox();
+            this.buttonSaveData = new System.Windows.Forms.Button();
             this.labelGroup = new System.Windows.Forms.Label();
             this.labelPotok = new System.Windows.Forms.Label();
             this.labelCourse = new System.Windows.Forms.Label();
@@ -56,11 +57,12 @@
             this.comboBoxChoice = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.groupBoxUser = new System.Windows.Forms.GroupBox();
+            this.textBoxPassRepeat = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.buttonSaveData = new System.Windows.Forms.Button();
             this.groupBoxStudenInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCourse)).BeginInit();
             this.groupBoxStudentPersonalData.SuspendLayout();
@@ -92,6 +94,16 @@
             this.groupBoxStudenInfo.TabIndex = 4;
             this.groupBoxStudenInfo.TabStop = false;
             this.groupBoxStudenInfo.Text = "Студентска информация";
+            // 
+            // buttonSaveData
+            // 
+            this.buttonSaveData.Location = new System.Drawing.Point(278, 167);
+            this.buttonSaveData.Name = "buttonSaveData";
+            this.buttonSaveData.Size = new System.Drawing.Size(112, 23);
+            this.buttonSaveData.TabIndex = 8;
+            this.buttonSaveData.Text = "Запази данните";
+            this.buttonSaveData.UseVisualStyleBackColor = true;
+            this.buttonSaveData.Click += new System.EventHandler(this.buttonSaveData_Click);
             // 
             // labelGroup
             // 
@@ -307,6 +319,7 @@
             this.comboBoxChoice.FormattingEnabled = true;
             this.comboBoxChoice.Items.AddRange(new object[] {
             "Студент",
+            "Преподавател",
             "Администратор"});
             this.comboBoxChoice.Location = new System.Drawing.Point(15, 36);
             this.comboBoxChoice.Name = "comboBoxChoice";
@@ -316,7 +329,7 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(32, 141);
+            this.buttonSave.Location = new System.Drawing.Point(33, 184);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 16;
@@ -326,6 +339,8 @@
             // 
             // groupBoxUser
             // 
+            this.groupBoxUser.Controls.Add(this.textBoxPassRepeat);
+            this.groupBoxUser.Controls.Add(this.label1);
             this.groupBoxUser.Controls.Add(this.buttonSave);
             this.groupBoxUser.Controls.Add(this.textBoxPassword);
             this.groupBoxUser.Controls.Add(this.textBoxUsername);
@@ -338,10 +353,28 @@
             this.groupBoxUser.TabStop = false;
             this.groupBoxUser.Text = "Потребителски данни";
             // 
+            // textBoxPassRepeat
+            // 
+            this.textBoxPassRepeat.Location = new System.Drawing.Point(6, 159);
+            this.textBoxPassRepeat.Name = "textBoxPassRepeat";
+            this.textBoxPassRepeat.PasswordChar = '*';
+            this.textBoxPassRepeat.Size = new System.Drawing.Size(131, 20);
+            this.textBoxPassRepeat.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 143);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Repeat your Password";
+            // 
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(6, 101);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(131, 20);
             this.textBoxPassword.TabIndex = 8;
             // 
@@ -369,16 +402,6 @@
             this.labelUsername.Size = new System.Drawing.Size(58, 13);
             this.labelUsername.TabIndex = 5;
             this.labelUsername.Text = "Username:";
-            // 
-            // buttonSaveData
-            // 
-            this.buttonSaveData.Location = new System.Drawing.Point(278, 167);
-            this.buttonSaveData.Name = "buttonSaveData";
-            this.buttonSaveData.Size = new System.Drawing.Size(112, 23);
-            this.buttonSaveData.TabIndex = 8;
-            this.buttonSaveData.Text = "Запази данните";
-            this.buttonSaveData.UseVisualStyleBackColor = true;
-            this.buttonSaveData.Click += new System.EventHandler(this.buttonSaveData_Click);
             // 
             // Registration
             // 
@@ -439,5 +462,7 @@
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Button buttonSaveData;
+        private System.Windows.Forms.TextBox textBoxPassRepeat;
+        private System.Windows.Forms.Label label1;
     }
 }

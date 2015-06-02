@@ -12,14 +12,14 @@ namespace StudentInfoSystem.Logic
     {
         public static Student IsThereStudent(User usr)
         {
-            return UserData.GetStudentDataByUser(usr.FacNumber);
+            return StudentData.GetStudentDataByUser(usr.FacNumber);
         }
 
         public static bool InsertStudentIfValid(Student s)
         {
             //bool isTrue = s.FirstName != null && s.SecondName != null && s.LastName != null && s.Faculty != null && s.Specialty != null && s.FakNumber != null && s.Potok != null && s._Group_ != null && s.OKS != null && s.StudentStatus != null && s.Course != null;
 
-            if (UserData.InsertStudent(s))
+            if (StudentData.InsertStudent(s))
             {
                 return true;
             }

@@ -26,7 +26,7 @@ namespace StudentInfoSystem.View
 
             List<int> groupList;
             groupList = new List<int>();
-            groupList = Data.UserData.ShowAllGroup();
+            groupList = Data.StudentData.ShowAllGroup();
 
             for (int i = 0; i < groupList.Count; i++)
             {

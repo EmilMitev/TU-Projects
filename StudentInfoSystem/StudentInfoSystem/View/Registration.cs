@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentInfoSystem.Logic;
 
 namespace StudentInfoSystem.View
 {
@@ -43,6 +44,10 @@ namespace StudentInfoSystem.View
             if (comboBoxChoice.Text == "Студент")
             {
                 user.Role = 1;
+            }
+            else if (comboBoxChoice.Text == "Преподавател")
+            {
+                user.Role = 2;
             }
             else
             {
@@ -102,48 +107,81 @@ namespace StudentInfoSystem.View
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (Data.UserData.IsUserNameOccupied(GetUserData().Username))
+            RegisterValidation rv = new RegisterValidation();
+            if (!(rv.ValidateUserInput(GetUserData().Username, GetUserData().Password)))
             {
-                MessageBox.Show("Потребителското име е заето!");
+                MessageBox.Show(rv.errText);
             }
             else
             {
-                if (Data.UserData.InsertUserData(GetUserData()))
+                if (Data.UserData.IsUserNameOccupied(GetUserData().Username))
                 {
-                    MessageBox.Show("Успешно добавихте нов потребител!");
-                    this.Close();
+                    MessageBox.Show("Потребителското име е заето!");
                 }
                 else
                 {
-                    MessageBox.Show("Нещо се обърка!");
+                    if (rv.IsPassMatch(this.textBoxPassRepeat.Text, this.textBoxPassword.Text))
+                    {
+                        if (Data.UserData.InsertUserData(GetUserData()))
+                        {
+                            MessageBox.Show("Успешно добавихте нов потребител!");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Нещо се обърка!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show(rv.errText);
+                    }
                 }
             }
-
         }
 
         private void buttonSaveData_Click(object sender, EventArgs e)
         {
-            if (Data.UserData.IsUserNameOccupied(GetUserData().Username))
+            RegisterValidation rv = new RegisterValidation();
+            if (!(rv.ValidateUserInput(GetUserData().Username, GetUserData().Password)))
             {
-                MessageBox.Show("Потребителското име е заето!");
+                MessageBox.Show(rv.errText);
+            }
+            if (!(rv.ValidateStudentInput(GetStudentData().FirstName, GetStudentData().FakNumber)))
+            {
+                MessageBox.Show(rv.errText);
             }
             else
             {
-                if (Data.UserData.InsertUserData(GetUserData()))
+                if (Data.UserData.IsUserNameOccupied(GetUserData().Username))
                 {
-                    if (Data.UserData.InsertStudent(GetStudentData()))
-                    {
-                        MessageBox.Show("Успешно добавихте нов потребител!");
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Нещо се обърка!");
-                    }
+                    MessageBox.Show("Потребителското име е заето!");
                 }
                 else
                 {
-                    MessageBox.Show("Нещо се обърка!");
+                    if (rv.IsPassMatch(this.textBoxPassword.Text, this.textBoxPassRepeat.Text))
+                    {
+                        if (Data.UserData.InsertUserData(GetUserData()))
+                        {
+                            if (Data.StudentData.InsertStudent(GetStudentData()))
+                            {
+                                MessageBox.Show("Успешно добавихте нов потребител!");
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Нещо се обърка!");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Нещо се обърка!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show(rv.errText);
+                    }
                 }
             }
         }
