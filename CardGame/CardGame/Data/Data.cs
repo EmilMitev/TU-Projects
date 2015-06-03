@@ -33,8 +33,8 @@ namespace CardGame.Data
             ResultDataContext db = new ResultDataContext();
             var queryResult = (from result in db.GetTable<Result>()
                                select result)
-                               .OrderBy(result => result.Time.Second)
-                               .ThenBy(result=> result.Time.Millisecond)
+                                .OrderBy(result => result.Time.Second)
+                                .ThenBy(result=> result.Time.Millisecond)
                                .ToList<Result>();
             return queryResult;
         }

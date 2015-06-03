@@ -48,6 +48,27 @@ namespace StudentInfoSystem.Data
             }
         }
 
+        public static bool IsFacNumberNameOccupied(string facNumber)
+        {
+            return UserData._IsFacNumberNameOccupied(facNumber);
+        }
+
+        private static bool _IsFacNumberNameOccupied(string facNumber)
+        {
+            UserDataClassesDataContext dc = new UserDataClassesDataContext();
+            var queryResult = (from users in dc.GetTable<User>()
+                               where (users.FacNumber == facNumber)
+                               select users.FacNumber).ToArray<string>();
+            if (queryResult.Count<string>() > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static bool InsertUserData(User u)
         {
             UserDataClassesDataContext dc = new UserDataClassesDataContext();

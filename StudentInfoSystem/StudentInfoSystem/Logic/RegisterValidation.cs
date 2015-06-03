@@ -23,76 +23,55 @@ namespace StudentInfoSystem.Logic
             }
         }
 
-        private bool isEmpty(string s)
+        public bool isEmpty(string s)
         {
             if (string.IsNullOrEmpty(s))
             {
+                errText = "Полетата не може да са empty или null!";
                 return true;
             }
             return false;
         }
 
-        private bool isStringLessThan(string s, int n)
+        public bool isStringLessThanOrMoreOf(string s, int min, int max, string what)
         {
-
-            if (s.Length < n)
+            if (s.Length<min || s.Length>max)
             {
+                if (min == max)
+                {
+                    errText = string.Format("{0} трябда да бъде точно {1} символа!", what, min);
+                }
+                else
+                {
+                    errText = string.Format("{0} трябда да бъде между {1} и {2} символа!", what, min, max);
+                }
                 return true;
             }
-
-            return false;
+            else
+            {
+                return false;
+            }
         }
 
-        public bool ValidateUserInput(string username, string password)
+        public bool checkFacNumber(string facNumber)
         {
-            if (isEmpty(username))
+            if (facNumber.Length == 9)
             {
-                errText = "Името не може да е empty или null!";
+                for (int i = 0; i < facNumber.Length; i++)
+                {
+                    if (!(char.IsDigit(facNumber[i])))
+                    {
+                        errText = "Факултетният номер трябва да е само цифри!";
+                        return true;
+                    }
+                }
                 return false;
             }
-            else if (isStringLessThan(username, 4))
+            else
             {
-                errText = "Името не може да е по-малко от 4 символа!";
-                return false;
+                errText = "Факултетният номер трябва да е точно 9 символа!";
+                return true;
             }
-            else if (isEmpty(password))
-            {
-                errText = "Паролата не може да е null или empty!";
-                return false;
-            }
-
-            else if (isStringLessThan(password, 6))
-            {
-                errText = "Паролата не може да е по-малко от 6 символа!";
-                return false;
-            }
-            return true;
-        }
-
-        public bool ValidateStudentInput(string name, string facNumber)
-        {
-            if (isEmpty(name))
-            {
-                errText = "Името не може да е empty или null!";
-                return false;
-            }
-            else if (isStringLessThan(name, 4))
-            {
-                errText = "Името не може да е по-малко от 4 символа!";
-                return false;
-            }
-            else if (isEmpty(facNumber))
-            {
-                errText = "Факултетният номер не може да е null или empty!";
-                return false;
-            }
-
-            else if (isStringLessThan(facNumber, 9))
-            {
-                errText = "Факултетният номер не може да е по-малко от 9 символа!";
-                return false;
-            }
-            return true;
         }
     }
 }

@@ -97,6 +97,7 @@
     <EmbeddedResource Include="View\TopFive.resx">
       <DependentUpon>TopFive.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
     <None Include="Data\Result.dbml.layout">
       <DependentUpon>Result.dbml</DependentUpon>
     </None>

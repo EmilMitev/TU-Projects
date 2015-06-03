@@ -187,7 +187,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(415, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(426, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -249,7 +249,7 @@
             this.panelEasy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEasy.Location = new System.Drawing.Point(0, 0);
             this.panelEasy.Name = "panelEasy";
-            this.panelEasy.Size = new System.Drawing.Size(415, 234);
+            this.panelEasy.Size = new System.Drawing.Size(426, 242);
             this.panelEasy.TabIndex = 37;
             // 
             // pictureBox1E
@@ -395,7 +395,7 @@
             this.panelNormal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNormal.Location = new System.Drawing.Point(0, 0);
             this.panelNormal.Name = "panelNormal";
-            this.panelNormal.Size = new System.Drawing.Size(415, 234);
+            this.panelNormal.Size = new System.Drawing.Size(426, 242);
             this.panelNormal.TabIndex = 36;
             // 
             // pictureBox18N
@@ -619,7 +619,7 @@
             this.panelHard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHard.Location = new System.Drawing.Point(0, 0);
             this.panelHard.Name = "panelHard";
-            this.panelHard.Size = new System.Drawing.Size(415, 234);
+            this.panelHard.Size = new System.Drawing.Size(426, 242);
             this.panelHard.TabIndex = 1;
             // 
             // pictureBox36H
@@ -988,7 +988,7 @@
             this.panelWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelWelcome.Location = new System.Drawing.Point(0, 0);
             this.panelWelcome.Name = "panelWelcome";
-            this.panelWelcome.Size = new System.Drawing.Size(415, 234);
+            this.panelWelcome.Size = new System.Drawing.Size(426, 242);
             this.panelWelcome.TabIndex = 36;
             // 
             // pictureBoxWelcome
@@ -1004,7 +1004,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 234);
+            this.ClientSize = new System.Drawing.Size(426, 242);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panelWelcome);
             this.Controls.Add(this.panelHard);
