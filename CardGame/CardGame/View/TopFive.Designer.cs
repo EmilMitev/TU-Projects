@@ -40,11 +40,13 @@
             this.labelTop2 = new System.Windows.Forms.Label();
             this.labelTop1 = new System.Windows.Forms.Label();
             this.labelTopFive = new System.Windows.Forms.Label();
+            this.buttonOk = new System.Windows.Forms.Button();
             this.panelTop5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop5
             // 
+            this.panelTop5.Controls.Add(this.buttonOk);
             this.panelTop5.Controls.Add(this.labelTopTime5);
             this.panelTop5.Controls.Add(this.labelTopTime4);
             this.panelTop5.Controls.Add(this.labelTopTime3);
@@ -162,6 +164,16 @@
             this.labelTopFive.TabIndex = 0;
             this.labelTopFive.Text = "Top 5";
             // 
+            // buttonOk
+            // 
+            this.buttonOk.Location = new System.Drawing.Point(119, 253);
+            this.buttonOk.Name = "buttonOk";
+            this.buttonOk.Size = new System.Drawing.Size(75, 23);
+            this.buttonOk.TabIndex = 11;
+            this.buttonOk.Text = "Ok";
+            this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
+            // 
             // TopFive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,5 +202,6 @@
         private System.Windows.Forms.Label labelTop2;
         private System.Windows.Forms.Label labelTop1;
         private System.Windows.Forms.Label labelTopFive;
+        private System.Windows.Forms.Button buttonOk;
     }
 }

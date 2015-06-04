@@ -30,5 +30,10 @@ namespace CardGame.View
             labelTopTime5.Text = list[4].Time.Second + ":" + list[4].Time.Millisecond;
 
         }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

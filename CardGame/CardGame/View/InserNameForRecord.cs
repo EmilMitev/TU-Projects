@@ -28,11 +28,19 @@ namespace CardGame.View
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            GameLogic logic = new GameLogic();
-            logic.InsertNewRecord(textBoxName.Text, labelScore.Text, labelTime.Text);
-            TopFive five = new TopFive(logic.GetRecords());
-            five.ShowDialog();            
-            this.Close();
+            InputValidation input = new InputValidation();
+            if (!(input.isCorrectPlayerInput(textBoxName.Text)))
+            {
+                MessageBox.Show(input.errText);
+            }
+            else
+            {
+                GameLogic logic = new GameLogic();
+                logic.InsertNewRecord(textBoxName.Text, labelScore.Text, labelTime.Text);
+                TopFive five = new TopFive(logic.GetRecords());
+                five.ShowDialog();
+                this.Close();
+            }
         }
     }
 }

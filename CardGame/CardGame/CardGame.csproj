@@ -67,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Result.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Logic\InputValidation.cs" />
     <Compile Include="Logic\Logic.cs" />
     <Compile Include="View\CardGame.cs">
       <SubType>Form</SubType>
