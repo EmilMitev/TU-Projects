@@ -18,7 +18,7 @@ namespace StudentInfoSystem.Logic
             }
             else
             {
-                errText = "Паролите не съвпадат!";
+                errText += "Паролите не съвпадат!\n";
                 return false;
             }
         }
@@ -35,15 +35,18 @@ namespace StudentInfoSystem.Logic
 
         public bool isStringLessThanOrMoreOf(string s, int min, int max, string what)
         {
+            string temp;
             if (s.Length < min || s.Length > max)
             {
                 if (min == max)
                 {
-                    errText = string.Format("{0} трябда да бъде точно {1} символа!", what, min);
+                   temp = string.Format("{0} трябда да бъде точно {1} символа!", what, min);
+                   errText = errText + "\n" + temp;
                 }
                 else
                 {
-                    errText = string.Format("{0} трябда да бъде между {1} и {2} символа!", what, min, max);
+                    temp = string.Format("{0} трябда да бъде между {1} и {2} символа!", what, min, max);
+                    errText = errText + "\n" + temp;
                 }
                 return true;
             }
@@ -61,7 +64,7 @@ namespace StudentInfoSystem.Logic
                 {
                     if (!(char.IsDigit(facNumber[i])))
                     {
-                        errText = "Факултетният номер трябва да е само цифри!";
+                        errText += "Факултетният номер трябва да е само цифри!\n";
                         return true;
                     }
                 }
@@ -69,13 +72,14 @@ namespace StudentInfoSystem.Logic
             }
             else
             {
-                errText = "Факултетният номер трябва да е точно 9 символа!";
+                errText += "Факултетният номер трябва да е точно 9 символа!\n";
                 return true;
             }
         }
 
         public bool CheckIsNumber(string str, string obj)
         {
+            string temp;
             short number;
             if (Int16.TryParse(str, out number))
             {
@@ -83,7 +87,8 @@ namespace StudentInfoSystem.Logic
             }
             else
             {
-                errText = string.Format("{0} трябва да бъде число!", obj);
+                temp = string.Format("{0} трябва да бъде число!", obj);
+                errText = errText + "\n" + temp;
                 return false;
             }
         }
@@ -92,7 +97,7 @@ namespace StudentInfoSystem.Logic
         {
             if (Data.UserData.IsUserNameOccupied(username))
             {
-                errText = "Потребителското име е заето";
+                errText += "Потребителското име е заето\n";
                 return true;
             }
             else
@@ -105,7 +110,7 @@ namespace StudentInfoSystem.Logic
         {
             if (Data.UserData.IsFacNumberNameOccupied(facNumber))
             {
-                errText = "Факултетният номер е зает!";
+                errText += "Факултетният номер е зает!\n";
                 return true;
             }
             else
@@ -125,7 +130,7 @@ namespace StudentInfoSystem.Logic
             }
             else
             {
-                errText = "Нещо се обърка!";
+                errText += "Нещо се обърка!\n";
                 return false;
             }
         }
@@ -138,7 +143,7 @@ namespace StudentInfoSystem.Logic
             }
             else
             {
-                errText = "Нещо се обърка!";
+                errText += "Нещо се обърка!\n";
                 return false;
             }
         }
