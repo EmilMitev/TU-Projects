@@ -35,7 +35,7 @@ namespace StudentInfoSystem.Logic
 
         public bool isStringLessThanOrMoreOf(string s, int min, int max, string what)
         {
-            if (s.Length<min || s.Length>max)
+            if (s.Length < min || s.Length > max)
             {
                 if (min == max)
                 {
@@ -71,6 +71,75 @@ namespace StudentInfoSystem.Logic
             {
                 errText = "Факултетният номер трябва да е точно 9 символа!";
                 return true;
+            }
+        }
+
+        public bool CheckIsNumber(string str, string obj)
+        {
+            short number;
+            if (Int16.TryParse(str, out number))
+            {
+                return true;
+            }
+            else
+            {
+                errText = string.Format("{0} трябва да бъде число!", obj);
+                return false;
+            }
+        }
+
+        public bool UsenameOcc(string username)
+        {
+            if (Data.UserData.IsUserNameOccupied(username))
+            {
+                errText = "Потребителското име е заето";
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool FacNumberOcc(string facNumber)
+        {
+            if (Data.UserData.IsFacNumberNameOccupied(facNumber))
+            {
+                errText = "Факултетният номер е зает!";
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool InsertUserData(Data.User user)
+        {
+            if (Data.UserData.InsertUserData(user))
+            {
+                errText = "Успешно добавихте нов потребител!";
+
+                return true;
+
+            }
+            else
+            {
+                errText = "Нещо се обърка!";
+                return false;
+            }
+        }
+        public bool InsertStudentData(Data.Student student)
+        {
+            if (Data.StudentData.InsertStudent(student))
+            {
+                errText = "Успешно добавихте нов потребител!";
+                return true;
+            }
+            else
+            {
+                errText = "Нещо се обърка!";
+                return false;
             }
         }
     }

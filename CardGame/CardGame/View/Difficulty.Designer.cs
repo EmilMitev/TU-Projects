@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.buttonNormal = new System.Windows.Forms.Button();
-            this.buttonHard = new System.Windows.Forms.Button();
             this.buttonEasy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -57,17 +56,6 @@
             this.buttonNormal.UseVisualStyleBackColor = true;
             this.buttonNormal.Click += new System.EventHandler(this.buttonNormal_Click);
             // 
-            // buttonHard
-            // 
-            this.buttonHard.Font = new System.Drawing.Font("Playbill", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHard.Location = new System.Drawing.Point(12, 178);
-            this.buttonHard.Name = "buttonHard";
-            this.buttonHard.Size = new System.Drawing.Size(260, 55);
-            this.buttonHard.TabIndex = 5;
-            this.buttonHard.Text = "Hard";
-            this.buttonHard.UseVisualStyleBackColor = true;
-            this.buttonHard.Click += new System.EventHandler(this.buttonHard_Click);
-            // 
             // buttonEasy
             // 
             this.buttonEasy.Font = new System.Drawing.Font("Playbill", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,8 +72,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(284, 247);
-            this.Controls.Add(this.buttonHard);
+            this.ClientSize = new System.Drawing.Size(284, 184);
             this.Controls.Add(this.buttonNormal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonEasy);
@@ -102,6 +89,5 @@
         private System.Windows.Forms.Button buttonEasy;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonNormal;
-        private System.Windows.Forms.Button buttonHard;
     }
 }

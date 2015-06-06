@@ -47,6 +47,7 @@
             this.pictureBox10E = new System.Windows.Forms.PictureBox();
             this.pictureBox11E = new System.Windows.Forms.PictureBox();
             this.pictureBox12E = new System.Windows.Forms.PictureBox();
+            this.panelWelcome = new System.Windows.Forms.Panel();
             this.panelNormal = new System.Windows.Forms.Panel();
             this.pictureBox18N = new System.Windows.Forms.PictureBox();
             this.pictureBox9N = new System.Windows.Forms.PictureBox();
@@ -66,45 +67,6 @@
             this.pictureBox1N = new System.Windows.Forms.PictureBox();
             this.pictureBox14N = new System.Windows.Forms.PictureBox();
             this.pictureBox5N = new System.Windows.Forms.PictureBox();
-            this.panelHard = new System.Windows.Forms.Panel();
-            this.pictureBox36H = new System.Windows.Forms.PictureBox();
-            this.pictureBox27H = new System.Windows.Forms.PictureBox();
-            this.pictureBox18H = new System.Windows.Forms.PictureBox();
-            this.pictureBox9H = new System.Windows.Forms.PictureBox();
-            this.pictureBox35H = new System.Windows.Forms.PictureBox();
-            this.pictureBox26H = new System.Windows.Forms.PictureBox();
-            this.pictureBox17H = new System.Windows.Forms.PictureBox();
-            this.pictureBox8H = new System.Windows.Forms.PictureBox();
-            this.pictureBox34H = new System.Windows.Forms.PictureBox();
-            this.pictureBox25H = new System.Windows.Forms.PictureBox();
-            this.pictureBox16H = new System.Windows.Forms.PictureBox();
-            this.pictureBox7H = new System.Windows.Forms.PictureBox();
-            this.pictureBox33H = new System.Windows.Forms.PictureBox();
-            this.pictureBox24H = new System.Windows.Forms.PictureBox();
-            this.pictureBox15H = new System.Windows.Forms.PictureBox();
-            this.pictureBox6H = new System.Windows.Forms.PictureBox();
-            this.pictureBox32H = new System.Windows.Forms.PictureBox();
-            this.pictureBox23H = new System.Windows.Forms.PictureBox();
-            this.pictureBox14H = new System.Windows.Forms.PictureBox();
-            this.pictureBox5H = new System.Windows.Forms.PictureBox();
-            this.pictureBox31H = new System.Windows.Forms.PictureBox();
-            this.pictureBox22H = new System.Windows.Forms.PictureBox();
-            this.pictureBox13H = new System.Windows.Forms.PictureBox();
-            this.pictureBox4H = new System.Windows.Forms.PictureBox();
-            this.pictureBox30H = new System.Windows.Forms.PictureBox();
-            this.pictureBox21H = new System.Windows.Forms.PictureBox();
-            this.pictureBox12H = new System.Windows.Forms.PictureBox();
-            this.pictureBox3H = new System.Windows.Forms.PictureBox();
-            this.pictureBox29H = new System.Windows.Forms.PictureBox();
-            this.pictureBox20H = new System.Windows.Forms.PictureBox();
-            this.pictureBox11H = new System.Windows.Forms.PictureBox();
-            this.pictureBox2H = new System.Windows.Forms.PictureBox();
-            this.pictureBox28H = new System.Windows.Forms.PictureBox();
-            this.pictureBox19H = new System.Windows.Forms.PictureBox();
-            this.pictureBox10H = new System.Windows.Forms.PictureBox();
-            this.pictureBox1H = new System.Windows.Forms.PictureBox();
-            this.panelWelcome = new System.Windows.Forms.Panel();
-            this.pictureBoxWelcome = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panelEasy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1E)).BeginInit();
@@ -138,45 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1N)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14N)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5N)).BeginInit();
-            this.panelHard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10H)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1H)).BeginInit();
-            this.panelWelcome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWelcome)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -187,7 +110,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(426, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(1194, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -249,7 +172,7 @@
             this.panelEasy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEasy.Location = new System.Drawing.Point(0, 0);
             this.panelEasy.Name = "panelEasy";
-            this.panelEasy.Size = new System.Drawing.Size(426, 242);
+            this.panelEasy.Size = new System.Drawing.Size(1194, 444);
             this.panelEasy.TabIndex = 37;
             // 
             // pictureBox1E
@@ -260,7 +183,7 @@
             this.pictureBox1E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox1E.TabIndex = 4;
             this.pictureBox1E.TabStop = false;
-            this.pictureBox1E.Click += new System.EventHandler(this.pictureBox1E_Click);
+            this.pictureBox1E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox2E
             // 
@@ -270,7 +193,7 @@
             this.pictureBox2E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox2E.TabIndex = 12;
             this.pictureBox2E.TabStop = false;
-            this.pictureBox2E.Click += new System.EventHandler(this.pictureBox2E_Click);
+            this.pictureBox2E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox3E
             // 
@@ -280,7 +203,7 @@
             this.pictureBox3E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox3E.TabIndex = 20;
             this.pictureBox3E.TabStop = false;
-            this.pictureBox3E.Click += new System.EventHandler(this.pictureBox3E_Click);
+            this.pictureBox3E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox4E
             // 
@@ -290,7 +213,7 @@
             this.pictureBox4E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox4E.TabIndex = 28;
             this.pictureBox4E.TabStop = false;
-            this.pictureBox4E.Click += new System.EventHandler(this.pictureBox4E_Click);
+            this.pictureBox4E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox5E
             // 
@@ -300,7 +223,7 @@
             this.pictureBox5E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox5E.TabIndex = 9;
             this.pictureBox5E.TabStop = false;
-            this.pictureBox5E.Click += new System.EventHandler(this.pictureBox5E_Click);
+            this.pictureBox5E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox6E
             // 
@@ -310,7 +233,7 @@
             this.pictureBox6E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox6E.TabIndex = 17;
             this.pictureBox6E.TabStop = false;
-            this.pictureBox6E.Click += new System.EventHandler(this.pictureBox6E_Click);
+            this.pictureBox6E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox7E
             // 
@@ -320,7 +243,7 @@
             this.pictureBox7E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox7E.TabIndex = 25;
             this.pictureBox7E.TabStop = false;
-            this.pictureBox7E.Click += new System.EventHandler(this.pictureBox7E_Click);
+            this.pictureBox7E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox8E
             // 
@@ -330,7 +253,7 @@
             this.pictureBox8E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox8E.TabIndex = 14;
             this.pictureBox8E.TabStop = false;
-            this.pictureBox8E.Click += new System.EventHandler(this.pictureBox8E_Click);
+            this.pictureBox8E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox9E
             // 
@@ -340,7 +263,7 @@
             this.pictureBox9E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox9E.TabIndex = 22;
             this.pictureBox9E.TabStop = false;
-            this.pictureBox9E.Click += new System.EventHandler(this.pictureBox9E_Click);
+            this.pictureBox9E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox10E
             // 
@@ -350,7 +273,7 @@
             this.pictureBox10E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox10E.TabIndex = 19;
             this.pictureBox10E.TabStop = false;
-            this.pictureBox10E.Click += new System.EventHandler(this.pictureBox10E_Click);
+            this.pictureBox10E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox11E
             // 
@@ -360,7 +283,7 @@
             this.pictureBox11E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox11E.TabIndex = 29;
             this.pictureBox11E.TabStop = false;
-            this.pictureBox11E.Click += new System.EventHandler(this.pictureBox11E_Click);
+            this.pictureBox11E.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // pictureBox12E
             // 
@@ -370,7 +293,17 @@
             this.pictureBox12E.Size = new System.Drawing.Size(101, 130);
             this.pictureBox12E.TabIndex = 30;
             this.pictureBox12E.TabStop = false;
-            this.pictureBox12E.Click += new System.EventHandler(this.pictureBox12E_Click);
+            this.pictureBox12E.Click += new System.EventHandler(this.pictureBox_Click);
+            // 
+            // panelWelcome
+            // 
+            this.panelWelcome.BackgroundImage = global::CardGame.Properties.Resources.welcome;
+            this.panelWelcome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panelWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelWelcome.Location = new System.Drawing.Point(0, 0);
+            this.panelWelcome.Name = "panelWelcome";
+            this.panelWelcome.Size = new System.Drawing.Size(1194, 444);
+            this.panelWelcome.TabIndex = 31;
             // 
             // panelNormal
             // 
@@ -395,7 +328,7 @@
             this.panelNormal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNormal.Location = new System.Drawing.Point(0, 0);
             this.panelNormal.Name = "panelNormal";
-            this.panelNormal.Size = new System.Drawing.Size(426, 242);
+            this.panelNormal.Size = new System.Drawing.Size(1194, 444);
             this.panelNormal.TabIndex = 36;
             // 
             // pictureBox18N
@@ -406,7 +339,7 @@
             this.pictureBox18N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox18N.TabIndex = 35;
             this.pictureBox18N.TabStop = false;
-            this.pictureBox18N.Click += new System.EventHandler(this.pictureBox18N_Click);
+            this.pictureBox18N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox9N
             // 
@@ -416,7 +349,7 @@
             this.pictureBox9N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox9N.TabIndex = 33;
             this.pictureBox9N.TabStop = false;
-            this.pictureBox9N.Click += new System.EventHandler(this.pictureBox9N_Click);
+            this.pictureBox9N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox13N
             // 
@@ -426,7 +359,7 @@
             this.pictureBox13N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox13N.TabIndex = 30;
             this.pictureBox13N.TabStop = false;
-            this.pictureBox13N.Click += new System.EventHandler(this.pictureBox13N_Click);
+            this.pictureBox13N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox4N
             // 
@@ -436,7 +369,7 @@
             this.pictureBox4N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox4N.TabIndex = 28;
             this.pictureBox4N.TabStop = false;
-            this.pictureBox4N.Click += new System.EventHandler(this.pictureBox4N_Click);
+            this.pictureBox4N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox17N
             // 
@@ -446,7 +379,7 @@
             this.pictureBox17N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox17N.TabIndex = 27;
             this.pictureBox17N.TabStop = false;
-            this.pictureBox17N.Click += new System.EventHandler(this.pictureBox17N_Click);
+            this.pictureBox17N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox8N
             // 
@@ -456,7 +389,7 @@
             this.pictureBox8N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox8N.TabIndex = 25;
             this.pictureBox8N.TabStop = false;
-            this.pictureBox8N.Click += new System.EventHandler(this.pictureBox8N_Click);
+            this.pictureBox8N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox12N
             // 
@@ -466,7 +399,7 @@
             this.pictureBox12N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox12N.TabIndex = 22;
             this.pictureBox12N.TabStop = false;
-            this.pictureBox12N.Click += new System.EventHandler(this.pictureBox12N_Click);
+            this.pictureBox12N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox3N
             // 
@@ -476,7 +409,7 @@
             this.pictureBox3N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox3N.TabIndex = 20;
             this.pictureBox3N.TabStop = false;
-            this.pictureBox3N.Click += new System.EventHandler(this.pictureBox3N_Click);
+            this.pictureBox3N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox16N
             // 
@@ -486,7 +419,7 @@
             this.pictureBox16N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox16N.TabIndex = 19;
             this.pictureBox16N.TabStop = false;
-            this.pictureBox16N.Click += new System.EventHandler(this.pictureBox16N_Click);
+            this.pictureBox16N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox7N
             // 
@@ -496,7 +429,7 @@
             this.pictureBox7N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox7N.TabIndex = 17;
             this.pictureBox7N.TabStop = false;
-            this.pictureBox7N.Click += new System.EventHandler(this.pictureBox7N_Click);
+            this.pictureBox7N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox11N
             // 
@@ -506,7 +439,7 @@
             this.pictureBox11N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox11N.TabIndex = 14;
             this.pictureBox11N.TabStop = false;
-            this.pictureBox11N.Click += new System.EventHandler(this.pictureBox11N_Click);
+            this.pictureBox11N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox2N
             // 
@@ -516,7 +449,7 @@
             this.pictureBox2N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox2N.TabIndex = 12;
             this.pictureBox2N.TabStop = false;
-            this.pictureBox2N.Click += new System.EventHandler(this.pictureBox2N_Click);
+            this.pictureBox2N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox15N
             // 
@@ -526,7 +459,7 @@
             this.pictureBox15N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox15N.TabIndex = 11;
             this.pictureBox15N.TabStop = false;
-            this.pictureBox15N.Click += new System.EventHandler(this.pictureBox15N_Click);
+            this.pictureBox15N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox6N
             // 
@@ -536,7 +469,7 @@
             this.pictureBox6N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox6N.TabIndex = 9;
             this.pictureBox6N.TabStop = false;
-            this.pictureBox6N.Click += new System.EventHandler(this.pictureBox6N_Click);
+            this.pictureBox6N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox10N
             // 
@@ -546,7 +479,7 @@
             this.pictureBox10N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox10N.TabIndex = 6;
             this.pictureBox10N.TabStop = false;
-            this.pictureBox10N.Click += new System.EventHandler(this.pictureBox10N_Click);
+            this.pictureBox10N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox1N
             // 
@@ -556,7 +489,7 @@
             this.pictureBox1N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox1N.TabIndex = 4;
             this.pictureBox1N.TabStop = false;
-            this.pictureBox1N.Click += new System.EventHandler(this.pictureBox1N_Click);
+            this.pictureBox1N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox14N
             // 
@@ -566,7 +499,7 @@
             this.pictureBox14N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox14N.TabIndex = 3;
             this.pictureBox14N.TabStop = false;
-            this.pictureBox14N.Click += new System.EventHandler(this.pictureBox14N_Click);
+            this.pictureBox14N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // pictureBox5N
             // 
@@ -576,440 +509,17 @@
             this.pictureBox5N.Size = new System.Drawing.Size(101, 130);
             this.pictureBox5N.TabIndex = 1;
             this.pictureBox5N.TabStop = false;
-            this.pictureBox5N.Click += new System.EventHandler(this.pictureBox5N_Click);
-            // 
-            // panelHard
-            // 
-            this.panelHard.Controls.Add(this.pictureBox36H);
-            this.panelHard.Controls.Add(this.pictureBox27H);
-            this.panelHard.Controls.Add(this.pictureBox18H);
-            this.panelHard.Controls.Add(this.pictureBox9H);
-            this.panelHard.Controls.Add(this.pictureBox35H);
-            this.panelHard.Controls.Add(this.pictureBox26H);
-            this.panelHard.Controls.Add(this.pictureBox17H);
-            this.panelHard.Controls.Add(this.pictureBox8H);
-            this.panelHard.Controls.Add(this.pictureBox34H);
-            this.panelHard.Controls.Add(this.pictureBox25H);
-            this.panelHard.Controls.Add(this.pictureBox16H);
-            this.panelHard.Controls.Add(this.pictureBox7H);
-            this.panelHard.Controls.Add(this.pictureBox33H);
-            this.panelHard.Controls.Add(this.pictureBox24H);
-            this.panelHard.Controls.Add(this.pictureBox15H);
-            this.panelHard.Controls.Add(this.pictureBox6H);
-            this.panelHard.Controls.Add(this.pictureBox32H);
-            this.panelHard.Controls.Add(this.pictureBox23H);
-            this.panelHard.Controls.Add(this.pictureBox14H);
-            this.panelHard.Controls.Add(this.pictureBox5H);
-            this.panelHard.Controls.Add(this.pictureBox31H);
-            this.panelHard.Controls.Add(this.pictureBox22H);
-            this.panelHard.Controls.Add(this.pictureBox13H);
-            this.panelHard.Controls.Add(this.pictureBox4H);
-            this.panelHard.Controls.Add(this.pictureBox30H);
-            this.panelHard.Controls.Add(this.pictureBox21H);
-            this.panelHard.Controls.Add(this.pictureBox12H);
-            this.panelHard.Controls.Add(this.pictureBox3H);
-            this.panelHard.Controls.Add(this.pictureBox29H);
-            this.panelHard.Controls.Add(this.pictureBox20H);
-            this.panelHard.Controls.Add(this.pictureBox11H);
-            this.panelHard.Controls.Add(this.pictureBox2H);
-            this.panelHard.Controls.Add(this.pictureBox28H);
-            this.panelHard.Controls.Add(this.pictureBox19H);
-            this.panelHard.Controls.Add(this.pictureBox10H);
-            this.panelHard.Controls.Add(this.pictureBox1H);
-            this.panelHard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHard.Location = new System.Drawing.Point(0, 0);
-            this.panelHard.Name = "panelHard";
-            this.panelHard.Size = new System.Drawing.Size(426, 242);
-            this.panelHard.TabIndex = 1;
-            // 
-            // pictureBox36H
-            // 
-            this.pictureBox36H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox36H.Location = new System.Drawing.Point(868, 443);
-            this.pictureBox36H.Name = "pictureBox36H";
-            this.pictureBox36H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox36H.TabIndex = 35;
-            this.pictureBox36H.TabStop = false;
-            this.pictureBox36H.Click += new System.EventHandler(this.pictureBox36H_Click);
-            // 
-            // pictureBox27H
-            // 
-            this.pictureBox27H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox27H.Location = new System.Drawing.Point(868, 307);
-            this.pictureBox27H.Name = "pictureBox27H";
-            this.pictureBox27H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox27H.TabIndex = 34;
-            this.pictureBox27H.TabStop = false;
-            this.pictureBox27H.Click += new System.EventHandler(this.pictureBox27H_Click);
-            // 
-            // pictureBox18H
-            // 
-            this.pictureBox18H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox18H.Location = new System.Drawing.Point(868, 171);
-            this.pictureBox18H.Name = "pictureBox18H";
-            this.pictureBox18H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox18H.TabIndex = 33;
-            this.pictureBox18H.TabStop = false;
-            this.pictureBox18H.Click += new System.EventHandler(this.pictureBox18H_Click);
-            // 
-            // pictureBox9H
-            // 
-            this.pictureBox9H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox9H.Location = new System.Drawing.Point(868, 35);
-            this.pictureBox9H.Name = "pictureBox9H";
-            this.pictureBox9H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox9H.TabIndex = 32;
-            this.pictureBox9H.TabStop = false;
-            this.pictureBox9H.Click += new System.EventHandler(this.pictureBox9H_Click);
-            // 
-            // pictureBox35H
-            // 
-            this.pictureBox35H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox35H.Location = new System.Drawing.Point(761, 443);
-            this.pictureBox35H.Name = "pictureBox35H";
-            this.pictureBox35H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox35H.TabIndex = 31;
-            this.pictureBox35H.TabStop = false;
-            this.pictureBox35H.Click += new System.EventHandler(this.pictureBox35H_Click);
-            // 
-            // pictureBox26H
-            // 
-            this.pictureBox26H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox26H.Location = new System.Drawing.Point(761, 307);
-            this.pictureBox26H.Name = "pictureBox26H";
-            this.pictureBox26H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox26H.TabIndex = 30;
-            this.pictureBox26H.TabStop = false;
-            this.pictureBox26H.Click += new System.EventHandler(this.pictureBox26H_Click);
-            // 
-            // pictureBox17H
-            // 
-            this.pictureBox17H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox17H.Location = new System.Drawing.Point(761, 171);
-            this.pictureBox17H.Name = "pictureBox17H";
-            this.pictureBox17H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox17H.TabIndex = 29;
-            this.pictureBox17H.TabStop = false;
-            this.pictureBox17H.Click += new System.EventHandler(this.pictureBox17H_Click);
-            // 
-            // pictureBox8H
-            // 
-            this.pictureBox8H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox8H.Location = new System.Drawing.Point(761, 35);
-            this.pictureBox8H.Name = "pictureBox8H";
-            this.pictureBox8H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox8H.TabIndex = 28;
-            this.pictureBox8H.TabStop = false;
-            this.pictureBox8H.Click += new System.EventHandler(this.pictureBox8H_Click);
-            // 
-            // pictureBox34H
-            // 
-            this.pictureBox34H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox34H.Location = new System.Drawing.Point(654, 443);
-            this.pictureBox34H.Name = "pictureBox34H";
-            this.pictureBox34H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox34H.TabIndex = 27;
-            this.pictureBox34H.TabStop = false;
-            this.pictureBox34H.Click += new System.EventHandler(this.pictureBox34H_Click);
-            // 
-            // pictureBox25H
-            // 
-            this.pictureBox25H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox25H.Location = new System.Drawing.Point(654, 307);
-            this.pictureBox25H.Name = "pictureBox25H";
-            this.pictureBox25H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox25H.TabIndex = 26;
-            this.pictureBox25H.TabStop = false;
-            this.pictureBox25H.Click += new System.EventHandler(this.pictureBox25H_Click);
-            // 
-            // pictureBox16H
-            // 
-            this.pictureBox16H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox16H.Location = new System.Drawing.Point(654, 171);
-            this.pictureBox16H.Name = "pictureBox16H";
-            this.pictureBox16H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox16H.TabIndex = 25;
-            this.pictureBox16H.TabStop = false;
-            this.pictureBox16H.Click += new System.EventHandler(this.pictureBox16H_Click);
-            // 
-            // pictureBox7H
-            // 
-            this.pictureBox7H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox7H.Location = new System.Drawing.Point(654, 35);
-            this.pictureBox7H.Name = "pictureBox7H";
-            this.pictureBox7H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox7H.TabIndex = 24;
-            this.pictureBox7H.TabStop = false;
-            this.pictureBox7H.Click += new System.EventHandler(this.pictureBox7H_Click);
-            // 
-            // pictureBox33H
-            // 
-            this.pictureBox33H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox33H.Location = new System.Drawing.Point(547, 443);
-            this.pictureBox33H.Name = "pictureBox33H";
-            this.pictureBox33H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox33H.TabIndex = 23;
-            this.pictureBox33H.TabStop = false;
-            this.pictureBox33H.Click += new System.EventHandler(this.pictureBox33H_Click);
-            // 
-            // pictureBox24H
-            // 
-            this.pictureBox24H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox24H.Location = new System.Drawing.Point(547, 307);
-            this.pictureBox24H.Name = "pictureBox24H";
-            this.pictureBox24H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox24H.TabIndex = 22;
-            this.pictureBox24H.TabStop = false;
-            this.pictureBox24H.Click += new System.EventHandler(this.pictureBox24H_Click);
-            // 
-            // pictureBox15H
-            // 
-            this.pictureBox15H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox15H.Location = new System.Drawing.Point(547, 171);
-            this.pictureBox15H.Name = "pictureBox15H";
-            this.pictureBox15H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox15H.TabIndex = 21;
-            this.pictureBox15H.TabStop = false;
-            this.pictureBox15H.Click += new System.EventHandler(this.pictureBox15H_Click);
-            // 
-            // pictureBox6H
-            // 
-            this.pictureBox6H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox6H.Location = new System.Drawing.Point(547, 35);
-            this.pictureBox6H.Name = "pictureBox6H";
-            this.pictureBox6H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox6H.TabIndex = 20;
-            this.pictureBox6H.TabStop = false;
-            this.pictureBox6H.Click += new System.EventHandler(this.pictureBox6H_Click);
-            // 
-            // pictureBox32H
-            // 
-            this.pictureBox32H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox32H.Location = new System.Drawing.Point(440, 443);
-            this.pictureBox32H.Name = "pictureBox32H";
-            this.pictureBox32H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox32H.TabIndex = 19;
-            this.pictureBox32H.TabStop = false;
-            this.pictureBox32H.Click += new System.EventHandler(this.pictureBox32H_Click);
-            // 
-            // pictureBox23H
-            // 
-            this.pictureBox23H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox23H.Location = new System.Drawing.Point(440, 307);
-            this.pictureBox23H.Name = "pictureBox23H";
-            this.pictureBox23H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox23H.TabIndex = 18;
-            this.pictureBox23H.TabStop = false;
-            this.pictureBox23H.Click += new System.EventHandler(this.pictureBox23H_Click);
-            // 
-            // pictureBox14H
-            // 
-            this.pictureBox14H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox14H.Location = new System.Drawing.Point(440, 171);
-            this.pictureBox14H.Name = "pictureBox14H";
-            this.pictureBox14H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox14H.TabIndex = 17;
-            this.pictureBox14H.TabStop = false;
-            this.pictureBox14H.Click += new System.EventHandler(this.pictureBox14H_Click);
-            // 
-            // pictureBox5H
-            // 
-            this.pictureBox5H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox5H.Location = new System.Drawing.Point(440, 35);
-            this.pictureBox5H.Name = "pictureBox5H";
-            this.pictureBox5H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox5H.TabIndex = 16;
-            this.pictureBox5H.TabStop = false;
-            this.pictureBox5H.Click += new System.EventHandler(this.pictureBox5H_Click);
-            // 
-            // pictureBox31H
-            // 
-            this.pictureBox31H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox31H.Location = new System.Drawing.Point(333, 443);
-            this.pictureBox31H.Name = "pictureBox31H";
-            this.pictureBox31H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox31H.TabIndex = 15;
-            this.pictureBox31H.TabStop = false;
-            this.pictureBox31H.Click += new System.EventHandler(this.pictureBox31H_Click);
-            // 
-            // pictureBox22H
-            // 
-            this.pictureBox22H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox22H.Location = new System.Drawing.Point(333, 307);
-            this.pictureBox22H.Name = "pictureBox22H";
-            this.pictureBox22H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox22H.TabIndex = 14;
-            this.pictureBox22H.TabStop = false;
-            this.pictureBox22H.Click += new System.EventHandler(this.pictureBox22H_Click);
-            // 
-            // pictureBox13H
-            // 
-            this.pictureBox13H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox13H.Location = new System.Drawing.Point(333, 171);
-            this.pictureBox13H.Name = "pictureBox13H";
-            this.pictureBox13H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox13H.TabIndex = 13;
-            this.pictureBox13H.TabStop = false;
-            this.pictureBox13H.Click += new System.EventHandler(this.pictureBox13H_Click);
-            // 
-            // pictureBox4H
-            // 
-            this.pictureBox4H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox4H.Location = new System.Drawing.Point(333, 35);
-            this.pictureBox4H.Name = "pictureBox4H";
-            this.pictureBox4H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox4H.TabIndex = 12;
-            this.pictureBox4H.TabStop = false;
-            this.pictureBox4H.Click += new System.EventHandler(this.pictureBox4H_Click);
-            // 
-            // pictureBox30H
-            // 
-            this.pictureBox30H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox30H.Location = new System.Drawing.Point(226, 443);
-            this.pictureBox30H.Name = "pictureBox30H";
-            this.pictureBox30H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox30H.TabIndex = 11;
-            this.pictureBox30H.TabStop = false;
-            this.pictureBox30H.Click += new System.EventHandler(this.pictureBox30H_Click);
-            // 
-            // pictureBox21H
-            // 
-            this.pictureBox21H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox21H.Location = new System.Drawing.Point(226, 307);
-            this.pictureBox21H.Name = "pictureBox21H";
-            this.pictureBox21H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox21H.TabIndex = 10;
-            this.pictureBox21H.TabStop = false;
-            this.pictureBox21H.Click += new System.EventHandler(this.pictureBox21H_Click);
-            // 
-            // pictureBox12H
-            // 
-            this.pictureBox12H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox12H.Location = new System.Drawing.Point(226, 171);
-            this.pictureBox12H.Name = "pictureBox12H";
-            this.pictureBox12H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox12H.TabIndex = 9;
-            this.pictureBox12H.TabStop = false;
-            this.pictureBox12H.Click += new System.EventHandler(this.pictureBox12H_Click);
-            // 
-            // pictureBox3H
-            // 
-            this.pictureBox3H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox3H.Location = new System.Drawing.Point(226, 35);
-            this.pictureBox3H.Name = "pictureBox3H";
-            this.pictureBox3H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox3H.TabIndex = 8;
-            this.pictureBox3H.TabStop = false;
-            this.pictureBox3H.Click += new System.EventHandler(this.pictureBox3H_Click);
-            // 
-            // pictureBox29H
-            // 
-            this.pictureBox29H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox29H.Location = new System.Drawing.Point(119, 443);
-            this.pictureBox29H.Name = "pictureBox29H";
-            this.pictureBox29H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox29H.TabIndex = 7;
-            this.pictureBox29H.TabStop = false;
-            this.pictureBox29H.Click += new System.EventHandler(this.pictureBox29H_Click);
-            // 
-            // pictureBox20H
-            // 
-            this.pictureBox20H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox20H.Location = new System.Drawing.Point(119, 307);
-            this.pictureBox20H.Name = "pictureBox20H";
-            this.pictureBox20H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox20H.TabIndex = 6;
-            this.pictureBox20H.TabStop = false;
-            this.pictureBox20H.Click += new System.EventHandler(this.pictureBox20H_Click);
-            // 
-            // pictureBox11H
-            // 
-            this.pictureBox11H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox11H.Location = new System.Drawing.Point(119, 171);
-            this.pictureBox11H.Name = "pictureBox11H";
-            this.pictureBox11H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox11H.TabIndex = 5;
-            this.pictureBox11H.TabStop = false;
-            this.pictureBox11H.Click += new System.EventHandler(this.pictureBox11H_Click);
-            // 
-            // pictureBox2H
-            // 
-            this.pictureBox2H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox2H.Location = new System.Drawing.Point(119, 35);
-            this.pictureBox2H.Name = "pictureBox2H";
-            this.pictureBox2H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox2H.TabIndex = 4;
-            this.pictureBox2H.TabStop = false;
-            this.pictureBox2H.Click += new System.EventHandler(this.pictureBox2H_Click);
-            // 
-            // pictureBox28H
-            // 
-            this.pictureBox28H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox28H.Location = new System.Drawing.Point(12, 443);
-            this.pictureBox28H.Name = "pictureBox28H";
-            this.pictureBox28H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox28H.TabIndex = 3;
-            this.pictureBox28H.TabStop = false;
-            this.pictureBox28H.Click += new System.EventHandler(this.pictureBox28H_Click);
-            // 
-            // pictureBox19H
-            // 
-            this.pictureBox19H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox19H.Location = new System.Drawing.Point(12, 307);
-            this.pictureBox19H.Name = "pictureBox19H";
-            this.pictureBox19H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox19H.TabIndex = 2;
-            this.pictureBox19H.TabStop = false;
-            this.pictureBox19H.Click += new System.EventHandler(this.pictureBox19H_Click);
-            // 
-            // pictureBox10H
-            // 
-            this.pictureBox10H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox10H.Location = new System.Drawing.Point(12, 171);
-            this.pictureBox10H.Name = "pictureBox10H";
-            this.pictureBox10H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox10H.TabIndex = 1;
-            this.pictureBox10H.TabStop = false;
-            this.pictureBox10H.Click += new System.EventHandler(this.pictureBox10H_Click);
-            // 
-            // pictureBox1H
-            // 
-            this.pictureBox1H.Image = global::CardGame.Properties.Resources.CardBack;
-            this.pictureBox1H.Location = new System.Drawing.Point(12, 35);
-            this.pictureBox1H.Name = "pictureBox1H";
-            this.pictureBox1H.Size = new System.Drawing.Size(101, 130);
-            this.pictureBox1H.TabIndex = 0;
-            this.pictureBox1H.TabStop = false;
-            this.pictureBox1H.Click += new System.EventHandler(this.pictureBox1H_Click);
-            // 
-            // panelWelcome
-            // 
-            this.panelWelcome.Controls.Add(this.pictureBoxWelcome);
-            this.panelWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelWelcome.Location = new System.Drawing.Point(0, 0);
-            this.panelWelcome.Name = "panelWelcome";
-            this.panelWelcome.Size = new System.Drawing.Size(426, 242);
-            this.panelWelcome.TabIndex = 36;
-            // 
-            // pictureBoxWelcome
-            // 
-            this.pictureBoxWelcome.Image = global::CardGame.Properties.Resources.welcome;
-            this.pictureBoxWelcome.Location = new System.Drawing.Point(12, 35);
-            this.pictureBoxWelcome.Name = "pictureBoxWelcome";
-            this.pictureBoxWelcome.Size = new System.Drawing.Size(404, 198);
-            this.pictureBoxWelcome.TabIndex = 0;
-            this.pictureBoxWelcome.TabStop = false;
+            this.pictureBox5N.Click += new System.EventHandler(this.pictureBoxN_Click);
             // 
             // CardGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 242);
+            this.ClientSize = new System.Drawing.Size(1194, 444);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panelWelcome);
-            this.Controls.Add(this.panelHard);
             this.Controls.Add(this.panelEasy);
             this.Controls.Add(this.panelNormal);
+            this.Controls.Add(this.panelWelcome);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CardGame";
             this.Text = "Card Game";
@@ -1047,45 +557,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1N)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14N)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5N)).EndInit();
-            this.panelHard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10H)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1H)).EndInit();
-            this.panelWelcome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWelcome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1133,46 +604,7 @@
         private System.Windows.Forms.PictureBox pictureBox16N;
         private System.Windows.Forms.PictureBox pictureBox17N;
         private System.Windows.Forms.PictureBox pictureBox18N;
-
-        private System.Windows.Forms.Panel panelHard;
-        private System.Windows.Forms.PictureBox pictureBox1H;
-        private System.Windows.Forms.PictureBox pictureBox2H;
-        private System.Windows.Forms.PictureBox pictureBox3H;
-        private System.Windows.Forms.PictureBox pictureBox4H;
-        private System.Windows.Forms.PictureBox pictureBox5H;
-        private System.Windows.Forms.PictureBox pictureBox6H;
-        private System.Windows.Forms.PictureBox pictureBox7H;
-        private System.Windows.Forms.PictureBox pictureBox8H;
-        private System.Windows.Forms.PictureBox pictureBox9H;
-        private System.Windows.Forms.PictureBox pictureBox10H;
-        private System.Windows.Forms.PictureBox pictureBox11H;
-        private System.Windows.Forms.PictureBox pictureBox12H;
-        private System.Windows.Forms.PictureBox pictureBox13H;
-        private System.Windows.Forms.PictureBox pictureBox14H;
-        private System.Windows.Forms.PictureBox pictureBox15H;
-        private System.Windows.Forms.PictureBox pictureBox16H;
-        private System.Windows.Forms.PictureBox pictureBox17H;
-        private System.Windows.Forms.PictureBox pictureBox18H;
-        private System.Windows.Forms.PictureBox pictureBox19H;
-        private System.Windows.Forms.PictureBox pictureBox20H;
-        private System.Windows.Forms.PictureBox pictureBox21H;
-        private System.Windows.Forms.PictureBox pictureBox22H;
-        private System.Windows.Forms.PictureBox pictureBox23H;
-        private System.Windows.Forms.PictureBox pictureBox24H;
-        private System.Windows.Forms.PictureBox pictureBox25H;
-        private System.Windows.Forms.PictureBox pictureBox26H;
-        private System.Windows.Forms.PictureBox pictureBox27H;
-        private System.Windows.Forms.PictureBox pictureBox28H;
-        private System.Windows.Forms.PictureBox pictureBox29H;
-        private System.Windows.Forms.PictureBox pictureBox30H;
-        private System.Windows.Forms.PictureBox pictureBox31H;
-        private System.Windows.Forms.PictureBox pictureBox32H;
-        private System.Windows.Forms.PictureBox pictureBox33H;
-        private System.Windows.Forms.PictureBox pictureBox34H;
-        private System.Windows.Forms.PictureBox pictureBox35H;
-        private System.Windows.Forms.PictureBox pictureBox36H;
         private System.Windows.Forms.Panel panelWelcome;
-        private System.Windows.Forms.PictureBox pictureBoxWelcome;
     }
 }
 

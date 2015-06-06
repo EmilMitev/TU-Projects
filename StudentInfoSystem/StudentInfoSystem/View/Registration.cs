@@ -13,11 +13,16 @@ namespace StudentInfoSystem.View
 {
     public partial class Registration : Form
     {
+        private Data.User user;
+        private Data.Student st;
+
         public Registration()
         {
             InitializeComponent();
             HideComponents();
             ClientSize = new System.Drawing.Size(160, 86);
+            user = new Data.User();
+            st = new Data.Student();
         }
 
         private void HideComponents()
@@ -34,9 +39,8 @@ namespace StudentInfoSystem.View
             groupBoxUser.Visible = true;
         }
 
-        private Data.User GetUserData()
+        private void GetUserData()
         {
-            Data.User user = new Data.User();
             user.Username = textBoxUsername.Text;
             user.Password = textBoxPassword.Text;
             user.FacNumber = textBoxFakNumber.Text;
@@ -49,42 +53,54 @@ namespace StudentInfoSystem.View
             {
                 user.Role = 2;
             }
-            else
-            {
-                user.Role = 3;
-            }
-
-            return user;
         }
 
-        private Data.Student GetStudentData()
+        private void GetStudentData()
         {
-            Data.Student st = new Data.Student();
+            RegisterValidation rv = new RegisterValidation();
             st.FirstName = textBoxStudentFirstName.Text;
             st.SecondName = textBoxStudentSecondName.Text;
             st.LastName = textBoxStudentThirdName.Text;
             st.Faculty = textBoxFaculty.Text;
             st.Specialty = textBoxSpecialty.Text;
             st.FakNumber = textBoxFakNumber.Text;
-            st.Potok = textBoxPotok.Text;
-            if (textBoxGroup.Text != string.Empty)
+            
+            if (!(rv.CheckIsNumber(textBoxGroup.Text, "Групата")))
             {
-                st._Group_ = int.Parse(textBoxGroup.Text);
+                MessageBox.Show(rv.errText);
             }
-            if (textBoxGroup.Text != string.Empty)
+            else if (!(rv.CheckIsNumber(comboBoxOKS.Text, "ОКС")))
             {
-                st.OKS = (short)comboBoxOKS.SelectedIndex;
+                MessageBox.Show(rv.errText);
             }
-            if (comboBoxStatus.Text != string.Empty)
+            else if (!(rv.CheckIsNumber(textBoxPotok.Text, "Потокът")))
             {
-                st.StudentStatus = (short)comboBoxStatus.SelectedIndex;
+                MessageBox.Show(rv.errText);
             }
-            if (numericUpDownCourse.Text != string.Empty)
+            else if (!(rv.CheckIsNumber(comboBoxStatus.Text, "Статус")))
             {
-                st.Course = (short)numericUpDownCourse.Value;
+                MessageBox.Show(rv.errText);
             }
-
-            return st;
+            else
+            {
+                st.Potok = textBoxPotok.Text;
+                if (textBoxGroup.Text != string.Empty)
+                {
+                    st._Group_ = int.Parse(textBoxGroup.Text);
+                }
+                if (textBoxGroup.Text != string.Empty)
+                {
+                    st.OKS = (short)comboBoxOKS.SelectedIndex;
+                }
+                if (comboBoxStatus.Text != string.Empty)
+                {
+                    st.StudentStatus = (short)comboBoxStatus.SelectedIndex;
+                }
+                if (numericUpDownCourse.Text != string.Empty)
+                {
+                    st.Course = (short)numericUpDownCourse.Value;
+                }
+            }
         }
 
         private void comboBoxChoice_SelectedIndexChanged(object sender, EventArgs e)
@@ -95,13 +111,6 @@ namespace StudentInfoSystem.View
                 VisibleComponents();
                 comboBoxChoice.Enabled = false;
                 buttonSave.Visible = false;
-            }
-            else if (comboBoxChoice.Text == "Администратор")
-            {
-                ClientSize = new System.Drawing.Size(166, 342);
-                comboBoxChoice.Enabled = false;
-                groupBoxUser.Visible = true;
-                buttonSaveData.Visible = false;
             }
             else if (comboBoxChoice.Text == "Преподавател")
             {
@@ -115,7 +124,9 @@ namespace StudentInfoSystem.View
         private void buttonSave_Click(object sender, EventArgs e)
         {
             RegisterValidation rv = new RegisterValidation();
-            if (rv.isEmpty(GetUserData().Username))
+            GetUserData();
+            GetStudentData();
+            if (rv.isEmpty(user.Username))
             {
                 MessageBox.Show(rv.errText);
             }
@@ -127,7 +138,7 @@ namespace StudentInfoSystem.View
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isStringLessThanOrMoreOf(GetUserData().Username, 4, 16, "Username"))
+            else if (rv.isStringLessThanOrMoreOf(user.Username, 4, 16, "Username"))
             {
                 MessageBox.Show(rv.errText);
             }
@@ -145,14 +156,14 @@ namespace StudentInfoSystem.View
             }
             else
             {
-                if (Data.UserData.InsertUserData(GetUserData()))
+                if (rv.InsertUserData(user))
                 {
-                    MessageBox.Show("Успешно добавихте нов потребител!");
+                    MessageBox.Show(rv.errText);
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Нещо се обърка!");
+                    MessageBox.Show(rv.errText);
                 }
             }
         }
@@ -160,9 +171,10 @@ namespace StudentInfoSystem.View
         private void buttonSaveData_Click(object sender, EventArgs e)
         {
             RegisterValidation rv = new RegisterValidation();
-
+            GetUserData();
+            GetStudentData();
             #region CheckNullOrEmpty
-            if (rv.isEmpty(GetUserData().Username))
+            if (rv.isEmpty(user.Username))
             {
                 MessageBox.Show(rv.errText);
             }
@@ -174,41 +186,41 @@ namespace StudentInfoSystem.View
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData().FirstName))
+            else if (rv.isEmpty(st.FirstName))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData().SecondName))
+            else if (rv.isEmpty(st.SecondName))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData().LastName))
+            else if (rv.isEmpty(st.LastName))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData().Faculty))
+            else if (rv.isEmpty(st.Faculty))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData().Specialty))
+            else if (rv.isEmpty(st.Specialty))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData().FakNumber))
+            else if (rv.isEmpty(st.FakNumber))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData().Potok))
+            else if (rv.isEmpty(st.Potok))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isEmpty(GetStudentData()._Group_.ToString()))
+            else if (rv.isEmpty(st._Group_.ToString()))
             {
                 MessageBox.Show(rv.errText);
             }
             #endregion
 
-            else if (rv.isStringLessThanOrMoreOf(GetUserData().Username, 4, 16, "Username"))
+            else if (rv.isStringLessThanOrMoreOf(user.Username, 4, 16, "Username"))
             {
                 MessageBox.Show(rv.errText);
             }
@@ -224,55 +236,56 @@ namespace StudentInfoSystem.View
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isStringLessThanOrMoreOf(GetStudentData().FirstName, 4, 16, "Името"))
+            else if (rv.isStringLessThanOrMoreOf(st.FirstName, 4, 16, "Името"))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isStringLessThanOrMoreOf(GetStudentData().SecondName, 4, 16, "Презимето"))
+            else if (rv.isStringLessThanOrMoreOf(st.SecondName, 4, 16, "Презимето"))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isStringLessThanOrMoreOf(GetStudentData().LastName, 4, 16, "Фамилията"))
+            else if (rv.isStringLessThanOrMoreOf(st.LastName, 4, 16, "Фамилията"))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isStringLessThanOrMoreOf(GetStudentData().Faculty, 3, 10, "Факултетът"))
+            else if (rv.isStringLessThanOrMoreOf(st.Faculty, 3, 10, "Факултетът"))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.isStringLessThanOrMoreOf(GetStudentData().Specialty, 3, 10, "Специалността"))
+            else if (rv.isStringLessThanOrMoreOf(st.Specialty, 3, 10, "Специалността"))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (rv.checkFacNumber(GetStudentData().FakNumber))
+            else if (rv.checkFacNumber(st.FakNumber))
             {
                 MessageBox.Show(rv.errText);
             }
-            else if (Data.UserData.IsUserNameOccupied(GetUserData().Username))
+            
+            else if (rv.UsenameOcc(user.Username))
             {
-                MessageBox.Show("Потребителското име е заето!");
+                MessageBox.Show(rv.errText);
             }
-            else if (Data.UserData.IsFacNumberNameOccupied(GetUserData().FacNumber))
+            else if (rv.FacNumberOcc(user.FacNumber))
             {
-                MessageBox.Show("Факултетният номер е зает!");
+                MessageBox.Show(rv.errText);
             }
             else
             {
-                if (Data.UserData.InsertUserData(GetUserData()))
+                if (rv.InsertUserData(user))
                 {
-                    if (Data.StudentData.InsertStudent(GetStudentData()))
+                    if (rv.InsertStudentData(st))
                     {
-                        MessageBox.Show("Успешно добавихте нов потребител!");
+                        MessageBox.Show(rv.errText);
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Нещо се обърка!");
+                        MessageBox.Show(rv.errText);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Нещо се обърка!");
+                    MessageBox.Show(rv.errText);
                 }
             }
         }

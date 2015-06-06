@@ -20,7 +20,8 @@ namespace CardGame.Logic
 
         public int EasyCards { get; set; }
         public int NormalCards { get; set; }
-        public int HardCards { get; set; }
+
+        public int[] mass = new int[2];
 
         #region matrix
         private int[,] matrixEasy = {
@@ -35,13 +36,6 @@ namespace CardGame.Logic
                                       {0,0,0,0,0,0}
                                      };
 
-        private int[,] matrixHard = {
-                                     {0,0,0,0,0,0,0,0,0},
-                                     {0,0,0,0,0,0,0,0,0},
-                                     {0,0,0,0,0,0,0,0,0},
-                                     {0,0,0,0,0,0,0,0,0}
-                                    };
-
         public int[,] MatrixEasy
         {
             get
@@ -55,14 +49,6 @@ namespace CardGame.Logic
             get
             {
                 return this.matrixNormal;
-            }
-        }
-
-        public int[,] MatrixHard
-        {
-            get
-            {
-                return this.matrixHard;
             }
         }
 
@@ -84,7 +70,6 @@ namespace CardGame.Logic
         {
             this.EasyCards = (this.MatrixEasy.GetLength(0) * this.MatrixEasy.GetLength(1)) / 2;
             this.NormalCards = (this.MatrixNormal.GetLength(0) * this.MatrixNormal.GetLength(1)) / 2;
-            this.HardCards = (this.MatrixHard.GetLength(0) * this.MatrixHard.GetLength(1)) / 2;
             choise = index;
             if (index == 1)
             {
@@ -93,10 +78,6 @@ namespace CardGame.Logic
             if (index == 2)
             {
                 Randomize(matrixNormal);
-            }
-            if (index == 3)
-            {
-                Randomize(matrixHard);
             }
             list = new List<Result>();
         }
@@ -186,26 +167,6 @@ namespace CardGame.Logic
             {
                 return global::CardGame.Properties.Resources.ace;
             }
-            if (matrix[i, j] == 14)
-            {
-                return global::CardGame.Properties.Resources._2;
-            }
-            if (matrix[i, j] == 15)
-            {
-                return global::CardGame.Properties.Resources._3;
-            }
-            if (matrix[i, j] == 16)
-            {
-                return global::CardGame.Properties.Resources._4;
-            }
-            if (matrix[i, j] == 17)
-            {
-                return global::CardGame.Properties.Resources._5;
-            }
-            if (matrix[i, j] == 18)
-            {
-                return global::CardGame.Properties.Resources._6;
-            }
             return global::CardGame.Properties.Resources.CardBack;
         }
 
@@ -230,18 +191,6 @@ namespace CardGame.Logic
                     if (this.MatrixNormal[list[0], list[1]] == this.MatrixNormal[list[2], list[3]])
                     {
                         --NormalCards;
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                if (choise == 3)
-                {
-                    if (this.MatrixHard[list[0], list[1]] == this.MatrixHard[list[2], list[3]])
-                    {
-                        --HardCards;
                         return true;
                     }
                     else
@@ -278,6 +227,44 @@ namespace CardGame.Logic
         {
             return DataInfo.GetAllRecords();
         }
+
+        public int PBNumber(string name)
+        {
+            if (name == "pictureBox1E") { mass[0] = 0; mass[1] = 0; return 0; }
+            if (name == "pictureBox2E") { mass[0] = 0; mass[1] = 1; return 1; }
+            if (name == "pictureBox3E") { mass[0] = 0; mass[1] = 2; return 2; }
+            if (name == "pictureBox4E") { mass[0] = 0; mass[1] = 3; return 3; }
+            if (name == "pictureBox5E") { mass[0] = 1; mass[1] = 0; return 4; }
+            if (name == "pictureBox6E") { mass[0] = 1; mass[1] = 1; return 5; }
+            if (name == "pictureBox7E") { mass[0] = 1; mass[1] = 2; return 6; }
+            if (name == "pictureBox8E") { mass[0] = 1; mass[1] = 3; return 7; }
+            if (name == "pictureBox9E") { mass[0] = 2; mass[1] = 0; return 8; }
+            if (name == "pictureBox10E") { mass[0] = 2; mass[1] = 1; return 9; }
+            if (name == "pictureBox11E") { mass[0] = 2; mass[1] = 2; return 10; }
+            if (name == "pictureBox12E") { mass[0] = 2; mass[1] = 3; return 11; }
+            if (name == "pictureBox1N") { mass[0] = 0; mass[1] = 0; return 0; }
+            if (name == "pictureBox2N") { mass[0] = 0; mass[1] = 1; return 1; }
+            if (name == "pictureBox3N") { mass[0] = 0; mass[1] = 2; return 2; }
+            if (name == "pictureBox4N") { mass[0] = 0; mass[1] = 3; return 3; }
+            if (name == "pictureBox5N") { mass[0] = 0; mass[1] = 4; return 4; }
+            if (name == "pictureBox6N") { mass[0] = 0; mass[1] = 5; return 5; }
+            if (name == "pictureBox7N") { mass[0] = 1; mass[1] = 0; return 6; }
+            if (name == "pictureBox8N") { mass[0] = 1; mass[1] = 1; return 7; }
+            if (name == "pictureBox9N") { mass[0] = 1; mass[1] = 2; return 8; }
+            if (name == "pictureBox10N") { mass[0] = 1; mass[1] = 3; return 9; }
+            if (name == "pictureBox11N") { mass[0] = 1; mass[1] = 4; return 10; }
+            if (name == "pictureBox12N") { mass[0] = 1; mass[1] = 5; return 11; }
+            if (name == "pictureBox13N") { mass[0] = 2; mass[1] = 0; return 12; }
+            if (name == "pictureBox14N") { mass[0] = 2; mass[1] = 1; return 13; }
+            if (name == "pictureBox15N") { mass[0] = 2; mass[1] = 2; return 14; }
+            if (name == "pictureBox16N") { mass[0] = 2; mass[1] = 3; return 15; }
+            if (name == "pictureBox17N") { mass[0] = 2; mass[1] = 4; return 16; }
+            if (name == "pictureBox18N") { mass[0] = 2; mass[1] = 5; return 17; }
+            return 0;
+
+        }
+
+
 
         public void EndGame(int minutes, int seconds, int milliseconds, int score)
         {

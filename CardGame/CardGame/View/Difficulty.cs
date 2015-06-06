@@ -30,11 +30,5 @@ namespace CardGame
             this.Choise = 2;
             this.Close();
         }
-
-        private void buttonHard_Click(object sender, EventArgs e)
-        {
-            this.Choise = 3;
-            this.Close();
-        }
     }
 }

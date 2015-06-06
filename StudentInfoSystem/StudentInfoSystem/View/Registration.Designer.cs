@@ -319,8 +319,7 @@
             this.comboBoxChoice.FormattingEnabled = true;
             this.comboBoxChoice.Items.AddRange(new object[] {
             "Студент",
-            "Преподавател",
-            "Администратор"});
+            "Преподавател"});
             this.comboBoxChoice.Location = new System.Drawing.Point(15, 36);
             this.comboBoxChoice.Name = "comboBoxChoice";
             this.comboBoxChoice.Size = new System.Drawing.Size(121, 21);
