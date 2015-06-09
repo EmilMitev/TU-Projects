@@ -65,10 +65,10 @@ namespace StudentInfoSystem.View
             st.Specialty = textBoxSpecialty.Text;
             st.FakNumber = textBoxFakNumber.Text;
 
-            if (!(rv.CheckIsNumber(textBoxGroup.Text, "Групата")) &&
-                !(rv.CheckIsNumber(comboBoxOKS.Text, "ОКС")) &&
-                !(rv.CheckIsNumber(textBoxPotok.Text, "Потокът")) &&
-                !(rv.CheckIsNumber(comboBoxStatus.Text, "Статус")))
+            if (!(rv.CheckIsNumber(textBoxGroup.Text, "Групата")) ||
+               !(rv.CheckIsNumber(comboBoxOKS.Text, "ОКС")) ||
+               !(rv.CheckIsNumber(textBoxPotok.Text, "Потокът")) ||
+               !(rv.CheckIsNumber(comboBoxStatus.Text, "Статус")))
             {
                 MessageBox.Show(rv.errText);
             }
@@ -116,28 +116,35 @@ namespace StudentInfoSystem.View
         {
             RegisterValidation rv = new RegisterValidation();
             GetUserData();
-            if (!(rv.isEmpty(user.Username) &&
-                rv.isEmpty(this.textBoxPassword.Text) &&
-                rv.isEmpty(this.textBoxPassRepeat.Text) &&
-                rv.isStringLessThanOrMoreOf(user.Username, 4, 16, "Username") &&
-                rv.isStringLessThanOrMoreOf(this.textBoxPassword.Text, 6, 16, "Password") &&
-                rv.isStringLessThanOrMoreOf(this.textBoxPassRepeat.Text, 6, 16, "Password repeat") &&
-                !(rv.IsPassMatch(this.textBoxPassRepeat.Text, this.textBoxPassword.Text))))
+            if (rv.isEmpty(user.Username) ||
+                rv.isEmpty(this.textBoxPassword.Text) ||
+                rv.isEmpty(this.textBoxPassRepeat.Text))
             {
                 MessageBox.Show(rv.errText);
             }
             else
             {
-                if (rv.InsertUserData(user))
+                if (rv.isStringLessThanOrMoreOf(user.Username, 4, 16, "Username") ||
+                    rv.isStringLessThanOrMoreOf(this.textBoxPassword.Text, 6, 16, "Password") ||
+                    rv.isStringLessThanOrMoreOf(this.textBoxPassRepeat.Text, 6, 16, "Password repeat") ||
+                    !(rv.IsPassMatch(this.textBoxPassRepeat.Text, this.textBoxPassword.Text)))
                 {
                     MessageBox.Show(rv.errText);
-                    this.Close();
                 }
                 else
                 {
-                    MessageBox.Show(rv.errText);
+                    if (rv.InsertUserData(user))
+                    {
+                        MessageBox.Show(rv.errText);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show(rv.errText);
+                    }
                 }
             }
+
         }
 
         private void buttonSaveData_Click(object sender, EventArgs e)
@@ -145,30 +152,29 @@ namespace StudentInfoSystem.View
             RegisterValidation rv = new RegisterValidation();
             GetUserData();
             GetStudentData();
-
-            if (!(rv.isEmpty(user.Username) &&
-                rv.isEmpty(this.textBoxPassword.Text) &&
-                rv.isEmpty(this.textBoxPassRepeat.Text) &&
-                rv.isEmpty(st.FirstName) &&
-                rv.isEmpty(st.SecondName) &&
-                rv.isEmpty(st.LastName) &&
-                rv.isEmpty(st.Faculty) &&
-                rv.isEmpty(st.Specialty) &&
-                rv.isEmpty(st.FakNumber) &&
-                rv.isEmpty(st.Potok) &&
-                rv.isEmpty(st._Group_.ToString()) &&
-                rv.isStringLessThanOrMoreOf(user.Username, 4, 16, "Username") &&
-                rv.isStringLessThanOrMoreOf(this.textBoxPassword.Text, 6, 16, "Password") &&
-                rv.isStringLessThanOrMoreOf(this.textBoxPassRepeat.Text, 6, 16, "Password repeat") &&
-                !(rv.IsPassMatch(this.textBoxPassRepeat.Text, this.textBoxPassword.Text)) &&
-                rv.isStringLessThanOrMoreOf(st.FirstName, 4, 16, "Името") &&
-                rv.isStringLessThanOrMoreOf(st.SecondName, 4, 16, "Презимето") &&
-                rv.isStringLessThanOrMoreOf(st.LastName, 4, 16, "Фамилията") &&
-                rv.isStringLessThanOrMoreOf(st.Faculty, 3, 10, "Факултетът") &&
-                rv.isStringLessThanOrMoreOf(st.Specialty, 3, 10, "Специалността") &&
-                rv.checkFacNumber(st.FakNumber) &&
-                rv.UsenameOcc(user.Username) &&
-                rv.FacNumberOcc(user.FacNumber)))
+            if (rv.isEmpty(user.Username) ||
+                rv.isEmpty(this.textBoxPassword.Text) ||
+                rv.isEmpty(this.textBoxPassRepeat.Text) ||
+                rv.isEmpty(st.FirstName) ||
+                rv.isEmpty(st.SecondName) ||
+                rv.isEmpty(st.LastName) ||
+                rv.isEmpty(st.Faculty) ||
+                rv.isEmpty(st.Specialty) ||
+                rv.isEmpty(st.FakNumber) ||
+                rv.isEmpty(st.Potok) ||
+                rv.isEmpty(st._Group_.ToString()) ||
+                rv.isStringLessThanOrMoreOf(user.Username, 4, 16, "Username") ||
+                rv.isStringLessThanOrMoreOf(this.textBoxPassword.Text, 6, 16, "Password") ||
+                rv.isStringLessThanOrMoreOf(this.textBoxPassRepeat.Text, 6, 16, "Password repeat") ||
+                !(rv.IsPassMatch(this.textBoxPassRepeat.Text, this.textBoxPassword.Text)) ||
+                rv.isStringLessThanOrMoreOf(st.FirstName, 4, 16, "Името") ||
+                rv.isStringLessThanOrMoreOf(st.SecondName, 4, 16, "Презимето") ||
+                rv.isStringLessThanOrMoreOf(st.LastName, 4, 16, "Фамилията") ||
+                rv.isStringLessThanOrMoreOf(st.Faculty, 3, 10, "Факултетът") ||
+                rv.isStringLessThanOrMoreOf(st.Specialty, 3, 10, "Специалността") ||
+                rv.checkFacNumber(st.FakNumber) ||
+                rv.UsenameOcc(user.Username) ||
+                rv.FacNumberOcc(user.FacNumber))
             {
                 MessageBox.Show(rv.errText);
             }
@@ -183,6 +189,7 @@ namespace StudentInfoSystem.View
                 {
                     MessageBox.Show(rv.errText);
                 }
+
             }
         }
     }
