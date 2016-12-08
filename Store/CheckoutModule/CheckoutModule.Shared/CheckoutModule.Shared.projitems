@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b1c6b6eb-70ee-4910-a31c-65ededa16b04</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CheckoutModule</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Cart.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\ISellable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dbo.Models\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dbo.Models\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ItemsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SqliteDbService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLiteAsync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemCollectionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\cart.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\clothes.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\drinks.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\drinks\cola.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\drinks\fanta.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\drinks\juice.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\drinks\milk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\food.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\food\beef.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\food\cheese.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\food\potatoes.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\food\tomatoes.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\store.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\style\nike.jpg" />
+  </ItemGroup>
+</Project>

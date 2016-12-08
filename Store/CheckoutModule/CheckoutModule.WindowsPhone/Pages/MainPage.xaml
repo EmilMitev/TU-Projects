@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="CheckoutModule.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="MyStore" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe Print" FontSize="30" Style="{ThemeResource TitleTextBlockStyle}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Canvas Name="Menu" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" Height="80">
+                    <TextBlock FontSize="15" Text="Hello, " Foreground="White" Canvas.Top="10" />
+                    <TextBlock FontSize="15" Name="UserName" Foreground="White" Canvas.Left="50" Canvas.Top="10" />
+                    <TextBlock FontSize="15" Text="Money: " Foreground="White" Canvas.Top="40" />
+                    <TextBlock FontSize="15" Name="Money" Foreground="White" Canvas.Left="60" Canvas.Top="40" />
+                </Canvas>
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <Button x:Name="chartButton" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" Click="My_Cart" >
+                        <Button.Background>
+                            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Images/cart.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <TextBlock x:Name="foodText" Text="Food" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="26" FontFamily="Showcard Gothic" Margin="0 60"/>
+                    <TextBlock x:Name="drinksText" Text="Drinks" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="26" FontFamily="Showcard Gothic" Margin="0 60"/>
+                    <TextBlock x:Name="fashionText" Text="Fashion" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="26" FontFamily="Showcard Gothic" Margin="0 60" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1">
+                    <Button x:Name="foodButton" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" Click="foodButton_Click" Margin="0 30" >
+                        <Button.Background>
+                            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Images/food.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="drinksButton" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" Click="drinksButton_Click" Margin="0 30" >
+                        <Button.Background>
+                            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Images/drinks.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="fashionButton" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" Click="fashionButton_Click" Margin="0 30" >
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Images/clothes.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
