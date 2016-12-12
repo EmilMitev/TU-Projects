@@ -100,7 +100,7 @@
             this.ViewModel.Clear();
             Cart.UserChart.Items.Clear();
 
-            //this.Frame.Navigate(typeof(Bon), transferList);
+            this.Frame.Navigate(typeof(Bon), transferList);
         }
 
         private void Clear_Cart(object sender, RoutedEventArgs e)
